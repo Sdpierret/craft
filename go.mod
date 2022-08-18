@@ -1,13 +1,13 @@
 module github.com/notional-labs/craft
 
-go 1.18
+go 1.19
 
 require (
 	cosmossdk.io/math v1.0.0-beta.3
-	github.com/CosmWasm/wasmd v0.27.0
+	github.com/CosmWasm/wasmd v0.28.0
 	github.com/cosmos/cosmos-proto v1.0.0-alpha7.0.20220208174455-213b76899fac
 	github.com/cosmos/cosmos-sdk v0.46.0
-	github.com/cosmos/ibc-go/v4 v4.0.0-rc0
+	github.com/cosmos/ibc-go/v4 v4.0.0
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.2
 	github.com/gorilla/mux v1.8.0
@@ -20,7 +20,7 @@ require (
 	github.com/stretchr/testify v1.8.0
 	github.com/tendermint/tendermint v0.34.20
 	github.com/tendermint/tm-db v0.6.7
-	google.golang.org/genproto v0.0.0-20220519153652-3a47de7e79bd
+	google.golang.org/genproto v0.0.0-20220817144833-d7fd3f11b9b1
 	google.golang.org/grpc v1.48.0
 	google.golang.org/protobuf v1.28.1
 	gopkg.in/yaml.v2 v2.4.0
@@ -154,5 +154,7 @@ replace (
 	github.com/99designs/keyring => github.com/cosmos/keyring v1.1.7-0.20210622111912-ef00f8ac3d76
 	github.com/CosmWasm/wasmd => github.com/notional-labs/wasmd v0.25.1-0.20220717200618-f0d3a8e39d19
 	github.com/cosmos/ibc-go/v4 => github.com/notional-labs/ibc-go/v4 v4.0.0-20220707091415-8e4f87eaef2d
+	// be able to use Ledger nano S plus
+	github.com/cosmos/ledger-go => github.com/cosmos/ledger-go v0.9.3
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 )
